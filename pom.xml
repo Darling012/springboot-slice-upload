@@ -11,11 +11,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>springboot-slice-upload</artifactId>
-
+  <properties>
+         <commons-io.version>2.6</commons-io.version>
+       <commons-pool2.version>2.7.0</commons-pool2.version>
+    </properties>
   <dependencies>
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -24,10 +28,12 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-pool2</artifactId>
+        <version>${commons-pool2.version}</version>
     </dependency>
     <dependency>
       <groupId>org.reflections</groupId>
       <artifactId>reflections</artifactId>
+        <version>0.9.11</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
